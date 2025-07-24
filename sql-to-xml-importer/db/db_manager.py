@@ -16,7 +16,7 @@ class DBManager:
                 )
             ''')
 
-    def insert_products(self, product):
+    def insert_product(self, product):
         with self.conn:
              self.conn.execute('''
                 INSERT INTO products (id, name, price, category)
